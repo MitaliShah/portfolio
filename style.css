@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+  background-color: white;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+}
+
+#header-text{
+  margin-left: 30px;
+}
+
+#top-nav{
+  margin-left: auto;
+}
+
+#top-nav li{
+  display: inline-flex;
+  padding: 0 30px;
+  list-style: none;
+}
+
+#top-nav a{
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/**intro**/
+#intro-container{
+  background-color: #c1dee8;
+  line-height: 1.6;
+  text-align: center;
+  min-height: 80vh;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#intro h1{
+  font-size: 20px;
+  position: relative;
+  animation-name: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  margin-bottom: 10px;
+  color: white;
+}
+
+@keyframes heading{
+  0% {top: -200px;}
+  100%{top: 0;}
+}
+
+#intro p{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+#intro p{
+  position: relative;
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  margin-top: 10px;
+}
+
+@keyframes intro{
+  0% {left: -1000px;}
+  100%{left: 0;}
+}
+
+#intro a{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: white;
+  color: black;  
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+#intro a:hover {
+  background-color: black;
+  color: white;
+}
+
+/**Project section**/
+
+.project-container{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.project-info{
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.project-info a{
+  display: block;
+}
+
+/**media query**/
+@media only screen and (max-width: 900px) {
+  .project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
