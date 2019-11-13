@@ -16,8 +16,8 @@ header{
   justify-content: space-between;
   align-items: center;
   min-height: 10vh;
-  /* box-shadow: inset 0 -3em 3em #f2ecf8, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
-  box-shadow: inset 0 -3em 3em #FEE018, 0.3em 0.3em 1em rgba(231, 203, 203, 0.3);
+  box-shadow: inset 0 -3em 3em #F5E9E4, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  background-color: #F5E9E4;
   color: #06093C;
 }
 
@@ -40,7 +40,7 @@ header{
   color: #06093C;
   letter-spacing: 3px;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /**intro**/
@@ -48,17 +48,18 @@ header{
   background-color: #06093C;
   line-height: 1.6;
   text-align: center;
-  min-height: 80vh;
+  min-height: 75vh;
   margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color:#5FFBF1;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 #intro h2{
-  font-size: 24px;
+  font-size: 1.5em;
   position: relative;
   animation-name: heading;
   animation-duration: 3s;
@@ -85,7 +86,7 @@ header{
   display: inline-block;
   text-decoration: none;
   border: 1px solid black;
-  background-color: #f2ecf8;
+  background-color: #F5E9E4;
   color: black;  
   padding: 16px 32px;
   text-align: center;
@@ -105,6 +106,7 @@ header{
   font-size: 18px;
   margin-bottom: 16px;
   padding: 20px;
+  color: #06093C;
 }
 
 .projects-wrapper{
@@ -114,7 +116,6 @@ header{
 }
 
 .project-container{
-  /* background-image: linear-gradient(to right, rgb(229, 224, 192), rgb(248, 240, 245)); */
   border: solid #FEE018 1px;
 }
 
@@ -137,22 +138,31 @@ header{
 }
 
 /**footer**/
+#contact{
+  background-color: #06093C;
+  color: #5FFBF1;
+  padding: 30px 0;
+  margin-top: 30px;
+}
 footer .social-links{
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
 }
 
 .social-links li a{
   padding: 0 10px;
   font-size: 40px;
-  color:#06093C;
+  color: white;
 }
 
 .social-links li a:hover{
   color: #FEE018;
+}
+
+.copyright{
+  text-align: center;
 }
 
 
@@ -163,12 +173,25 @@ footer .social-links{
     display: grid;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
+
+  #intro-container{    
+    min-height: 50vh;
+  }
+
+  #intro-container{
+    font-size: 1em;
+  }
+
+  #intro h2{
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 600px) {
   header {
     display: block;
     text-align: center;
+    padding: 10px 0;
   }
 
   #top-nav li{
